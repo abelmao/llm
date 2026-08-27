@@ -6,9 +6,10 @@
 > Nairaland, forums Les Numériques/LDLC/Fnac, nPerf/ARCEP pour le Bénin…).
 > **Règle appliquée** : un article n'est proposé que si la confiance est suffisante.
 >
-> **Contexte pris en compte** : Bénin (Cotonou) — 220 V/50 Hz prises type C/E, coupures fréquentes
-> **+ surtensions au retour du courant**, chaleur 30-35 °C, poussière d'harmattan, humidité en saison
-> des pluies, opérateurs MTN / Moov / Celtiis, achats Amazon.fr ou transport depuis la France.
+> **Contexte (corrigé)** : utilisateur **en France** — travail nomade (voiture) + postes fixes,
+> achats Amazon.fr. L'hypothèse Bénin initiale (déduite du projet de la boutique dans le repo) est
+> abandonnée : les sections Internet (Starlink, SIM, bandes 4G) et plusieurs justifications ont été
+> révisées. Les choix produits, sélectionnés d'abord sur le rapport qualité/prix, restent valides.
 >
 > Légende confiance : ✅ sûr — ⚠️ sûr avec précaution d'usage — ❓ pas proposé (à confirmer)
 
@@ -23,10 +24,10 @@
 | Chargeur voiture | Ugreen 130 W (USB-C PD 100 W) | 2 | 27-46 €/u | ⚠️ |
 | Multiprise parafoudre | Brennenstuhl Premium-Protect-Line 60 kA | 2 | 60-70 €/u | ⚠️ |
 | Ventilateur silencieux | Claymore V600+ (batterie, USB-C, BLDC) | 2 | 70-95 €/u | ✅ |
-| Starlink | Kit **Mini** + abo Résidentiel (30 000 F/mois) | 1 | kit : ❓ | ⚠️ |
-| Routeur 4G n°1 | TP-Link M7350 (EU, débloqué, batterie amovible) | 1 | 55-65 € | ✅ |
-| Routeur 4G n°2 | Huawei E5783B-230a (Cat7, débloqué) | 1 | ~57 € | ✅ |
-| SIM 1 / SIM 2 | Moov Africa (data principale) + MTN (secours) | 2 | ~15 000 F/mois | ✅ |
+| Starlink | Kit **Mini** (199,99 €) + Roam 100 Go 45 €/mois ou Résidentiel 35-45 €/mois | 1 | 200 € + abo | ✅ |
+| Routeur 4G n°1 | Huawei E5783B-230a (Cat7, débloqué, **B28 700 MHz ✔**) | 1 | ~57 € | ✅ |
+| Routeur 4G n°2 | Huawei E5785-320a (Cat6, 3 000 mAh, B28 ✔) | 1 | 70-90 € | ⚠️ |
+| SIM 1 / SIM 2 | B&You 300 Go (~20 €) + Free 5G 350 Go (~20 €) — 2 réseaux distincts | 2 | ~40 €/mois | ✅ |
 | KVM 4 ports | TESmart HKS401-E23 (EDID par entrée) | **1** (pas 3 — voir note) | 92-150 € | ✅ |
 | Dock USB-C | Dell WD19S 130/180 W d'occasion | 3 | 50-80 €/u | ✅ |
 | Adaptateur USB-C→HDMI | Ugreen 4K60 (alu) | 1 | 13-18 € | ✅ |
@@ -47,26 +48,23 @@
 | Tablette | Xiaomi Pad 7 (favori qualité/prix) | 1 | 265-330 € | ❓ |
 | « 3× Notif de décharge » | Entrée illisible sur le carnet | 3 | — | ❓ |
 
-**Budget indicatif du panier « sûr »** (hors PC portables, tablette et kit Starlink) : **≈ 2 850-3 900 €**.
+**Budget indicatif du panier « sûr »** (kit Starlink Mini inclus ; hors PC portables et tablette) : **≈ 3 050-4 100 €**.
 
 ---
 
 ## ⚡ Les 5 points critiques (à lire avant d'acheter)
 
-1. **Les stations électriques ne voyagent PAS en avion.** Toute batterie lithium > 160 Wh est
-   interdite en cabine ET en soute (règle IATA). Les Anker C1000 (1056 Wh) doivent être **livrées
-   ou expédiées en fret** — pas dans la valise. Les power banks (86-90 Wh) passent, mais **en
-   cabine uniquement**, jamais en soute.
-2. **Multiprise parafoudre ≠ protection complète.** Les parafoudres (MOV) n'absorbent que les pics
-   transitoires (foudre, microsecondes). Contre les **surtensions prolongées** typiques du retour
-   de courant au Bénin (280-300 V pendant des minutes), il faut **en amont** un onduleur AVR
-   (l'Eaton régule 165-285 V sans batterie) ou un protecteur de tension à coupure local
-   (type Sollatek/« fridge guard », courant à Cotonou). Chaîne cible :
-   *mur → protecteur de tension → onduleur AVR → multiprise parafoudre → matériel*.
-3. **La chaleur est le tueur n°2.** Batteries plomb d'onduleur : durée de vie divisée par 2-3 à
-   30-35 °C → acheter d'emblée 1 kit batterie de rechange par onduleur (~32 €, standard 12 V
-   7-9 Ah, trouvable localement). Ne rien laisser charger en plein soleil ; SSD à rebrancher
-   ~1×/mois s'il dort dans une voiture chaude.
+1. **Batteries et avion (si tu voyages).** Toute batterie lithium > 160 Wh est interdite en cabine
+   ET en soute (règle IATA) : les Anker C1000 (1056 Wh) ne prennent jamais l'avion — livraison
+   uniquement. Les power banks (86-90 Wh) passent, mais **en cabine uniquement**, jamais en soute.
+2. **Ordre de branchement.** En France le réseau est stable, mais orages et microcoupures existent :
+   chaîne cible *mur → onduleur AVR → multiprise parafoudre → matériel* pour les postes fixes, et
+   multiprise parafoudre seule pour le reste. Surveiller le voyant « protégé » des multiprises :
+   éteint = simple rallonge.
+3. **Chaleur : surtout la voiture.** Un habitacle au soleil monte à 50-60 °C : ne pas y laisser
+   charger power banks et chargeurs, ni dormir un SSD des mois sans le rebrancher (~1×/mois).
+   Pour les onduleurs, une pièce tempérée suffit ; le kit batterie de rechange (~32 €) reste un
+   bon achat de tranquillité à 3-4 ans.
 4. **1 seul KVM suffit probablement.** Un KVM 4 ports pilote déjà les 4 PC depuis un seul
    clavier/souris/écran. En acheter 3 n'a de sens que pour 3 postes de travail complets et
    distincts (~200-300 € d'économie sinon). Point technique : la chaîne
@@ -86,8 +84,8 @@
 1056 Wh LiFePO4 (chimie la plus stable à la chaleur, 3000 cycles), 1800 W, fonction UPS < 20 ms
 (suffisant pour PC portables/routeur/Starlink), recharge complète en 58 min (précieux quand le
 courant ne revient que par fenêtres courtes), entrée solaire 600 W pour plus tard. ~200-300 W de
-charge en coupure → 3,5-4,5 h par unité, 7-9 h avec les deux. Deux unités de 1 kWh = redondance
-(pas de SAV local) et meilleur €/Wh que 1× 2 kWh.
+charge → 3,5-4,5 h par unité, 7-9 h avec les deux. Deux unités de 1 kWh = redondance ET mobilité
+(une à demeure, une dans la voiture), et meilleur €/Wh que 1× 2 kWh.
 Écarté : EcoFlow (retours r/Ecoflow de coupures AC intempestives en mode UPS, firmware fragile,
 rappel CPSC du Delta Max 2000) ; Bluetti AC70 en alternative budget (~299-349 €) mais SAV critiqué.
 Pièges : désactiver les MAJ firmware auto (coupent les sorties), charge lente hors urgence, hors
@@ -98,9 +96,9 @@ soleil direct. Sources : [comparatif 4 marques 2026](https://entropysurvival.com
 [prix](https://www.idealo.fr/prix/203673845/anker-solix-c1000.html).
 
 **Onduleur — Eaton Ellipse PRO 1200 FR ×2** ✅
-Le critère décisif au Bénin : **plage AVR 165-285 V** ([spec vérifiée](https://uk.rs-online.com/web/p/uninterruptible-power-supplies/8239363)) —
-il corrige les variations SANS passer sur batterie, là où un onduleur à fenêtre étroite grillerait
-sa batterie en quelques mois. Prises FR directes, batterie remplaçable ~32 €
+Sa **plage AVR 165-285 V** ([spec vérifiée](https://uk.rs-online.com/web/p/uninterruptible-power-supplies/8239363))
+corrige les variations SANS passer sur batterie — confortable même sur une installation
+capricieuse ou pendant les orages, et c'est ce qui rend sa batterie durable. Prises FR directes, batterie remplaçable ~32 €
 ([kit officiel](https://eaton.onduleurs.fr/batteries/4367-kit-batterie-pour-onduleur-eaton-ellipse-pro-850-fr-elp850fr.html)),
 garantie 3 ans batterie incluse. Sortie pseudo-sinus : sans conséquence pour PC portables, mini PC,
 docks, routeurs (tout ton parc). Si un jour tu ajoutes un PC fixe à alim ATX : prendre pour ce
@@ -117,7 +115,7 @@ Sources : [Overclock.net](https://www.overclock.net/threads/eaton-ellipse-pro-wh
 90 Wh réels, USB-C 140 W (≈89 W soutenus mesurés sur charge de PC —
 [test](https://www.creativebloq.com/tech/accessories/ive-had-the-ugreen-nexode-25000mah-power-bank-for-a-month-and-it-shows-why-this-brand-is-so-trusted)),
 moitié du prix de l'Anker 737 pour plus de capacité. Sert aussi à alimenter le **Starlink Mini**
-(4-6 h) et les routeurs 4G en coupure. Sous la limite avion 100 Wh (cabine uniquement).
+(4-6 h) et les routeurs 4G en déplacement. Sous la limite avion 100 Wh (cabine uniquement).
 Alternative premium : CUKTECH 20 (recharge en 2 h vs 3h30). Éviter : Baseus Blade (60-88 W réels),
 vieux modèles Anker rappelés (A1263, A1257, A1647, A1652, A1681, A1689 —
 [rappel CPSC](https://cpsc.gov/Recalls/2025/More-than-One-Million-Anker-Power-Banks-Recalled-Due-to-Fire-and-Burn-Hazards-Manufactured-by-Anker-Innovations)).
@@ -155,47 +153,38 @@ surévaluées. [Test terrain](https://campingguidance.com/claymore-v600-fan-revi
 [retour overlanding](https://bigtentoutdoors.com/blogs/media/matt-dewitt-mwd-adventures-claymore-v600-rechargeable-circulator-fan-review).
 Option éco : 1× Claymore (poste) + 1× Xasla 8" 10 000 mAh (~40 €, voiture/appoint).
 
-### Internet
+### Internet (révisé : France)
 
-**Starlink — kit Mini + abonnement Résidentiel** ⚠️
-Officiellement au Bénin depuis nov. 2023 ([Ecofin](https://www.ecofinagency.com/telecom/0411-45013-starlink-launches-high-speed-satellite-internet-in-benin)) :
-**30 000 F/mois + ~3 125 F/mois de redevance ARCEP**. Le **Mini** est le bon choix pour toi :
-**20-40 W** (vs 40-100 W le Standard), alimentable en USB-C PD 100 W → tient 4-6 h sur ta power
-bank Ugreen pendant les coupures, IP67, >100 Mbps.
-Retours terrain Afrique de l'Ouest ([Nairaland](https://www.nairaland.com/7486765/spacex-starlink-internet-experience-lagos/91)) :
-excellent par beau temps, **-40 à -60 % de débit sous forte pluie tropicale** (rarement coupure
-totale) → tes SIM 4G couvrent ces fenêtres ; ciel bien dégagé obligatoire (outil d'obstruction
-dans l'app).
-**Pas proposé à l'achat les yeux fermés (❓ sur le prix)** : la presse cite toujours le kit à
-~400 000 F mais Starlink a cassé les prix presque partout en Afrique en 2025-2026 (117 000-146 000 F
-au Sénégal/Guinée-Bissau) et ni moi ni mes recherches n'avons pu charger starlink.com/bj (bloqué
-depuis mon environnement). **Action : ouvrir [starlink.com/bj](https://www.starlink.com/bj), entrer
-ton adresse, comparer Mini vs Standard.** Piège : revendeurs locaux qui doublent le prix du kit —
-toujours passer par le site officiel ; éviter les kits « sans compte » ou activés à l'étranger
-(blocage après ~2 mois hors pays d'enregistrement).
+**Starlink — kit Mini** ✅
+Prix France 2026 vérifiés : **kit Mini 199,99 €**, kit Standard 349,99 € ; abonnements sans
+engagement — **Résidentiel 35 €/mois (100 Mbit/s) ou 45 €/mois (200 Mbit/s)**, **Roam 100 Go
+45 €/mois** (usage nomade/week-end), Roam illimité 95 €/mois
+([tarifs détaillés](https://starlinkfrance.com/prix-starlink/), [formules](https://www.spacexfrance.com/starlink-abonnement/)).
+Pour ton profil nomade (voiture), le **Mini + Roam 100 Go** est la combinaison logique : 20-40 W,
+alimentable en USB-C PD 100 W → tourne sur ta power bank Ugreen, IP67, >100 Mbps.
+À savoir avant d'acheter : en France métropolitaine, la fibre + deux forfaits 4G/5G couvrent déjà
+presque tous les besoins — Starlink ne se justifie que pour les zones blanches et le nomadisme
+loin des villes ; l'abonnement se met en pause d'un mois sur l'autre (Roam), profites-en.
 
-**Routeurs 4G — TP-Link M7350 (EU) + Huawei E5783B-230a** ✅
-Confirmé : **routeur à batterie > clé USB** (une clé meurt avec le PC/secteur en coupure).
-Bandes du Bénin : **B3 (1800 MHz) principale + B20 (800 MHz)** ([wiki prepaid](https://prepaid-data-sim-card.fandom.com/wiki/Benin),
-[FrequencyCheck](https://www.frequencycheck.com/countries/benin)) — les deux modèles couvrent
-B1/B3/B7/B8/B20. Deux **marques différentes** = pas de panne de mode commun. M7350 : batterie
-**amovible** (2e batterie ~10 €) ; E5783 : Cat7 300 Mbps. Acheter les **versions EU** sur Amazon.fr
-(les versions US/Asie ont d'autres bandes). Batteries réelles : ~5-6 h → recharge sur power bank.
-MiFi d'opérateurs locaux : simlockés, à éviter pour la redondance (sauf le pocket wifi Celtiis à
-20 000 F avec 40-55 Go comme 3e réseau d'appoint).
-[Avis Fnac M7350](https://www.fnac.com/Modem-WiFi-TP-Link-M7350-4G-LTE/a13087677/avis) ·
-[bandes M7650 confirmées](https://community.tp-link.com/en/home/forum/topic/249784).
+**Routeurs 4G — Huawei E5783B-230a (+ E5785-320a en second)** ✅ / ⚠️
+Changement vs la version Bénin : en France, la **bande B28 (700 MHz)** est indispensable — c'est
+la bande de couverture de Free, Orange et Bouygues ([bandes des opérateurs FR](https://routeur4g.fr/)).
+Le TP-Link M7350 initialement retenu ne l'a pas → retiré. Le **Huawei E5783B-230a** la couvre :
+**B1/B3/B7/B8/B20/B28/B32 + B38/B40** vérifiées ([fiche bandes](https://www.getic.com/product/huawei-e5783b-230a-black),
+[cacombos](https://cacombos.com/device/E5783B-230)), Cat7 300 Mbps, ~57 €, débloqué. En second
+routeur : **Huawei E5785-320a** (Cat6, batterie 3 000 mAh ~12 h, B28 ✔, 70-90 €) — ⚠️ même marque
+que le premier (diversité imparfaite) ; alternative différente si tu veux du VPN intégré :
+GL.iNet Mudi. Toujours prendre la **version EU** sur Amazon.fr.
 
-**SIM — Moov Africa (principale) + MTN (secours)** ✅
-Le baromètre **nPerf** donne **Moov n°1 de l'internet mobile au Bénin en 2024 ET 2025**
-(23 Mbps down / 45 ms — [PDF 2024](https://media.nperf.com/files/publications/BJ/BJ-Barometre-Mobile-connections-nPerf-2024_21012025.pdf),
-[2025](https://blog.nperf.com/fr/moov-africa-n1-de-linternet-mobile-au-benin/)) ; **MTN** reste le
-plus gros réseau (40,9 % de parts, 5G, meilleure couverture nationale) → infrastructure totalement
-distincte = vraie redondance. Depuis août 2026, fin des « illimités » à 5 000/10 000 F : entrée de
-gamme 30 j ≈ **15 100 F = 20-25 Go puis bridage 1 Mbps** ([Bénin Web TV](https://beninwebtv.com/en/mobile-internet-in-benin-anger-after-the-end-of-the-unlimited-plans-at-5000-and-10000-fcfa/)).
-Avant d'engager : tester la réception réelle **à ton adresse** ([Atlas ARCEP](https://arcep.bj/pour-un-acces-facile-a-linformation-larcep-met-en-ligne-la-plateforme-de-latlas-de-couverture-et-de-la-qualite-de-service/)
-+ SIM prépayée à 500 F). Garder un micro-forfait actif sur la SIM secondaire (SIM inactives
-recyclées) ; enregistrement d'identité obligatoire ; tout en prépayé.
+**SIM — B&You 300 Go + Free 5G 350 Go (deux réseaux distincts)** ✅
+État 2025-2026 : **Orange n°1 qualité réseau ARCEP pour la 15e année** ([enquête ARCEP 2025](https://newsroom.orange.com/arcep-2025-orange-leader-sur-la-qualite-des-services-mobile-pour-la-15eme-fois-consecutive/)),
+**Bouygues n°1 du baromètre nPerf 2026** ([edcom](https://www.edcom.fr/actualites/orange-sfr-bouygues-et-free-qui-offre-le-meilleur-reseau-mobile-en-2025)).
+Meilleur duo valeur/diversité sans engagement : **B&You 300 Go 5G ≈ 19,99 €/mois** ([détail](https://selectra.info/telecom/fournisseurs/bouygues/offre/forfait-byou-300-go))
++ **Free 5G 350 Go ≈ 19,99 €/mois** — deux infrastructures totalement différentes.
+Option budget : RED by SFR 300 Go ~14 €/mois en 3e réseau. Option couverture maximale (zones
+rurales) : remplacer l'un des deux par Sosh/Orange. Avant d'engager : vérifier la couverture À TON
+adresse sur [Mon réseau mobile (ARCEP)](https://monreseaumobile.arcep.fr) — les classements
+nationaux ne valent rien à l'échelle d'une rue.
 
 ### Virtuel / bureau
 
@@ -274,9 +263,9 @@ le marché du boîtier dédié est mort — le [JackTrip Bridge est officielleme
 l'[Elk LIVE Bridge est supplanté par l'app](https://www.gearnews.com/elk-live-a-clever-low-latency-online-collaboration-system-reaches-the-market/)
 depuis 2023. Surtout, aucun des deux ne s'énumère comme carte son USB d'un PC : ils sont conçus
 pour la musique en réseau (portée ~1 000 km), pas pour remplacer le casque de Zoom.
-Physique : Cotonou↔Europe ≈ 100-150 ms aller-retour minimum (+30-60 ms via Starlink) — inutilisable
-pour jouer de la musique, mais équivalent à un appel VoIP normal pour PARLER : l'usage est donc
-faisable… avec du logiciel gratuit.
+Physique (révisée, France) : en métropole, 10-40 ms d'aller-retour sur fibre/4G — largement
+suffisant pour parler/écouter, et même la musique à distance devient possible à courte distance ;
+via Starlink, ajouter 30-60 ms (et son CGNAT impose un service de mise en relation ou Tailscale).
 **Solution retenue** : [Sonobus](https://sonobus.net/sonobus_userguide.html) (gratuit, open source,
 desktop + mobile + VST, traverse le NAT sans ouvrir de ports — utile derrière le CGNAT Starlink ;
 si double NAT symétrique bloque, ajouter Tailscale gratuit), ou
@@ -335,21 +324,21 @@ Règle 3-2-1 : idéalement + un WD Elements 5 To qui ne quitte pas la maison
 Alternative : Crucial X9 Pro (garantie 5 ans). Formater en exFAT ; rebrancher ~1×/mois s'il dort au chaud.
 
 **Téléphone back-up — Samsung Galaxy A16 (4G ou 5G)** ✅
-~103-116 €, batterie 5 000 mAh, dual SIM, bandes B3/B20 du Bénin, **6 ans de mises à jour** (un
-back-up encore sûr en 2030), et série A = la plus réparable en Afrique de l'Ouest (pièces partout
-à Cotonou). Lent (c'est un back-up, pas un principal). Prendre la version **européenne dual SIM** ;
-au Bénin exiger la boîte scellée. [Test](https://www.techadvisor.com/article/2617925/samsung-galaxy-a16-review.html) ·
+~103-116 €, batterie 5 000 mAh, dual SIM, toutes bandes françaises, **6 ans de mises à jour** (un
+back-up encore sûr en 2030), réparable partout (pièces série A omniprésentes). Lent (c'est un
+back-up, pas un principal). Prendre la version **européenne dual SIM**.
+[Test](https://www.techadvisor.com/article/2617925/samsung-galaxy-a16-review.html) ·
 [avis possesseurs](https://m.gsmarena.com/samsung_galaxy_a16-reviews-13383p15.php).
-Alternative locale : Tecno Spark (30-60 000 F, SAV Carlcare au Bénin, mais quasi zéro MAJ).
+Alternative : Xiaomi Redmi 14C (~90-100 €), moins suivi logiciellement.
 
 ### Transport
 
 **Valise back-up — B&W Outdoor Case Type 6000 avec mousse (SI)** ✅
 Qualité « classe Peli » au meilleur prix France (~164-180 € vs 260 €+ chez Nanuk/Pelican) :
 polypropylène, joint + valve de décompression, certifié BAM, −30/+80 °C, int. ~51×42×21 cm.
-Exactement ce qu'il faut contre l'harmattan et la saison des pluies.
-**Indispensable au Bénin : sachets de silicagel rechargeables à l'intérieur** (une valise étanche
-piège l'humidité). Alternative encore moins chère si son prix se confirme (~110-135 €) :
+Protection poussière/humidité/chocs pour l'électronique de secours, cave ou garage compris.
+**Ajouter des sachets de silicagel rechargeables à l'intérieur** (une valise étanche piège
+l'humidité). Alternative encore moins chère si son prix se confirme (~110-135 €) :
 Max Cases **MAX505S** (IP67, mousse incluse, garantie 5 ans —
 [VetSécurité](https://vetsecurite.com/valises-rigides-/11372-valise-de-transport-etanche-max505s-34-litres-noir-max-cases-8011236505100.html)).
 Éviter : Stanley/FatMax (non étanches), copies AliExpress (joints morts en 1-2 ans).
