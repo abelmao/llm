@@ -266,6 +266,26 @@ Le 2e slot multipoint du casque reste pour le téléphone. Résultat : 4 PC + t�
 [test](https://www.pocket-lint.com/creative-bt-w5-review/). Si visio intensive : Jabra Evolve2 65 +
 Link 380 sur le KVM (micro-perche, ~180-250 €).
 
+**Casque déporté par Internet (« objet connecté » audio) — creusé, boîtier NON proposé** ❌
+Idée : un appareil branché au PC qui se fait passer pour le casque/micro, et transporte l'audio
+par Internet jusqu'au casque réel situé ailleurs. Résultat de l'enquête :
+le marché du boîtier dédié est mort — le [JackTrip Bridge est officiellement abandonné](https://support.jacktrip.com/managing-jacktrip-bridges)
+(remplacé par l'app desktop ; stock restant ~150-250 $ + abonnement 10 $+/mois), et
+l'[Elk LIVE Bridge est supplanté par l'app](https://www.gearnews.com/elk-live-a-clever-low-latency-online-collaboration-system-reaches-the-market/)
+depuis 2023. Surtout, aucun des deux ne s'énumère comme carte son USB d'un PC : ils sont conçus
+pour la musique en réseau (portée ~1 000 km), pas pour remplacer le casque de Zoom.
+Physique : Cotonou↔Europe ≈ 100-150 ms aller-retour minimum (+30-60 ms via Starlink) — inutilisable
+pour jouer de la musique, mais équivalent à un appel VoIP normal pour PARLER : l'usage est donc
+faisable… avec du logiciel gratuit.
+**Solution retenue** : [Sonobus](https://sonobus.net/sonobus_userguide.html) (gratuit, open source,
+desktop + mobile + VST, traverse le NAT sans ouvrir de ports — utile derrière le CGNAT Starlink ;
+si double NAT symétrique bloque, ajouter Tailscale gratuit), ou
+[VBAN/VoiceMeeter](https://vb-audio.com/Voicemeeter/vban.htm) pour la topologie stricte « carte son
+virtuelle sur le PC ». Version « objet » si tenue au matériel : un Raspberry Pi + mini carte son
+USB (~80-120 €) en Sonobus/VBAN headless — c'est exactement ce qu'étaient les boîtiers JackTrip.
+Pour la simple visio, rejoindre l'audio de la réunion depuis l'app téléphone reste la solution la
+plus robuste (zéro matériel, résiliente aux coupures).
+
 ### Équipements
 
 **Écrans portables — Arzopa Z1RC 16" 2.5K ×2** ✅
