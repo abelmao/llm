@@ -37,7 +37,7 @@
 | Casque 2 sources | JBL Tune 770NC (multipoint auto, 44 h) | 1 | 69-99 € | ✅ |
 | « Casque 4 sources » | N'existe pas → Creative BT-W5 branché sur le KVM | 1 | ~55 € | ✅ |
 | Écran portable | Arzopa Z1RC 16" 2.5K (~400 nits mesurés) | 2 | 110-130 €/u | ✅ |
-| Mini PC | Beelink SER5 Max (Ryzen 7 6800H, 32 Go, RAM/SSD extensibles) | 1 | 330-360 € | ✅ |
+| Mini PC (= PC portable) | À préciser — piste : ThinkPad X13 AMD reconditionné (13", compact) | 1 | 250-450 € | ❓ |
 | Disque (backup nomade) | Samsung T7 Shield 2 To (IP65, chute 3 m) | 1 | 165-200 € | ✅ |
 | Disque (archive fixe, option) | WD Elements 5 To | 1 | 110-135 € | ✅ |
 | Téléphone back-up | Samsung Galaxy A16 (B3/B20, 6 ans de MAJ) | 1 | 103-116 € | ✅ |
@@ -47,7 +47,7 @@
 | Tablette | Xiaomi Pad 7 (favori qualité/prix) | 1 | 265-330 € | ❓ |
 | « 3× Notif de décharge » | Entrée illisible sur le carnet | 3 | — | ❓ |
 
-**Budget indicatif du panier « sûr »** (hors PC portables, tablette et kit Starlink) : **≈ 2 900-3 900 €**.
+**Budget indicatif du panier « sûr »** (hors PC portables — « Mini PC » inclus —, tablette et kit Starlink) : **≈ 2 550-3 550 €**.
 
 ---
 
@@ -277,14 +277,16 @@ l'exécution moyenne) : même surface pour moitié prix et panne non totale.
 Pièges : plusieurs variantes sur Amazon.fr (vérifier la fiche), pochette non fournie (+10 €),
 illisible en plein soleil direct (comme tout écran < 300 €), acheter via Amazon.fr (SAV AliExpress pénible).
 
-**Mini PC — Beelink SER5 Max (Ryzen 7 6800H, 32 Go, 500 Go-1 To)** ✅
-Gamme mature (BIOS stabilisé), ~73 °C max en charge et **~35 W** — reste sain à 33 °C ambiants et
-tourne des heures sur la station Anker. RAM SO-DIMM + SSD accessibles. ~330-360 €
-([bon plan repéré](https://www.minimachines.net/actu/bon-plan-le-beelink-ser5-max-ryzen-7-6800h-32-500go-a-356e-136071)).
-Pièges : viser la version **6800H à RAM SO-DIMM** (les 6800U/7735HS « 24 Go » sont soudés) ; ne
-PAS acheter les tout derniers Beelink à leur sortie (SER9 : écrans noirs/reboots documentés —
-[Overclockers UK](https://forums.overclockers.co.uk/threads/minisforum-gmktec-beelink.19002413/)) ;
-Ethernet > Wi-Fi ; dépoussiérer tous les 3-6 mois ; toujours derrière l'onduleur.
+**« Mini PC » — en réalité un PC portable (correction utilisateur)** ❓
+L'entrée du carnet désigne un PC portable, pas un mini PC de bureau : la recommandation initiale
+(Beelink SER5 Max) est **retirée** du panier. En attendant les précisions (taille voulue, usage,
+budget), la piste la plus cohérente avec le reste du parc : **ThinkPad X13 AMD reconditionné** —
+le pendant compact 13" du T14 (même certification MIL-STD-810H chaleur/poussière, même
+réparabilité, pièces communes), ~250-450 € selon génération sur Back Market. Si « mini » veut dire
+ultra-compact (8-11", type GPD Pocket / Chuwi MiniBook), c'est une niche à fiabilité inégale qui
+demandera une recherche dédiée avant toute proposition.
+*(Pour mémoire, si un poste fixe économique redevenait utile un jour : Beelink SER5 Max
+Ryzen 7 6800H, ~330-360 €, gamme mature et sobre ~35 W — recherche déjà faite.)*
 
 **Stockage — Samsung T7 Shield 2 To (+ option WD Elements 5 To à demeure)** ✅
 Pour un backup qui voyage : SSD durci obligatoire (IP65, chute 3 m, zéro pièce mobile) — un HDD
@@ -327,8 +329,10 @@ en housses néoprène — protection moindre à pleine charge. 4 PC ≈ 10-12 kg
 
 ## ❓ Pas encore proposés — ce qui manque pour trancher
 
-1. **PC portables (PC1-3 + back-up)** — le meilleur choix dépend de l'usage (bureautique ? dev ?
-   graphisme ?) et du budget par machine, que je ne connais pas. La piste la plus solide en
+1. **PC portables (PC1-3 + back-up, + le « Mini PC » qui est en fait un portable)** — le meilleur
+   choix dépend de l'usage (bureautique ? dev ? graphisme ?) et du budget par machine, que je ne
+   connais pas. Pour le « mini » : préciser aussi la taille voulue (ultraportable 13" ou vrai
+   mini 8-11" ?). La piste la plus solide en
    attendant : **ThinkPad T14 Gen 3 AMD reconditionné** (~420-550 €/u sur
    [Back Market](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t14-g3-14)) — MIL-STD-810H
    (chaleur/poussière), réparable partout, 4 machines identiques = un seul jeu de pièces/chargeurs.
