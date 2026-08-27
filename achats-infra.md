@@ -37,7 +37,7 @@
 | Casque 2 sources | JBL Tune 770NC (multipoint auto, 44 h) | 1 | 69-99 € | ✅ |
 | « Casque 4 sources » | N'existe pas → Creative BT-W5 branché sur le KVM | 1 | ~55 € | ✅ |
 | Écran portable | Arzopa Z1RC 16" 2.5K (~400 nits mesurés) | 2 | 110-130 €/u | ✅ |
-| Mini PC (= PC portable) | À préciser — piste : ThinkPad X13 AMD reconditionné (13", compact) | 1 | 250-450 € | ❓ |
+| Mini PC (= ordi de poche) | Chuwi MiniBook X N150 (10,5", 16/512 Go, 920 g) — QWERTY uniquement | 1 | 260-330 € | ⚠️ |
 | Disque (backup nomade) | Samsung T7 Shield 2 To (IP65, chute 3 m) | 1 | 165-200 € | ✅ |
 | Disque (archive fixe, option) | WD Elements 5 To | 1 | 110-135 € | ✅ |
 | Téléphone back-up | Samsung Galaxy A16 (B3/B20, 6 ans de MAJ) | 1 | 103-116 € | ✅ |
@@ -47,7 +47,7 @@
 | Tablette | Xiaomi Pad 7 (favori qualité/prix) | 1 | 265-330 € | ❓ |
 | « 3× Notif de décharge » | Entrée illisible sur le carnet | 3 | — | ❓ |
 
-**Budget indicatif du panier « sûr »** (hors PC portables — « Mini PC » inclus —, tablette et kit Starlink) : **≈ 2 550-3 550 €**.
+**Budget indicatif du panier « sûr »** (hors PC portables, tablette et kit Starlink) : **≈ 2 850-3 900 €**.
 
 ---
 
@@ -277,16 +277,27 @@ l'exécution moyenne) : même surface pour moitié prix et panne non totale.
 Pièges : plusieurs variantes sur Amazon.fr (vérifier la fiche), pochette non fournie (+10 €),
 illisible en plein soleil direct (comme tout écran < 300 €), acheter via Amazon.fr (SAV AliExpress pénible).
 
-**« Mini PC » — en réalité un PC portable (correction utilisateur)** ❓
-L'entrée du carnet désigne un PC portable, pas un mini PC de bureau : la recommandation initiale
-(Beelink SER5 Max) est **retirée** du panier. En attendant les précisions (taille voulue, usage,
-budget), la piste la plus cohérente avec le reste du parc : **ThinkPad X13 AMD reconditionné** —
-le pendant compact 13" du T14 (même certification MIL-STD-810H chaleur/poussière, même
-réparabilité, pièces communes), ~250-450 € selon génération sur Back Market. Si « mini » veut dire
-ultra-compact (8-11", type GPD Pocket / Chuwi MiniBook), c'est une niche à fiabilité inégale qui
-demandera une recherche dédiée avant toute proposition.
-*(Pour mémoire, si un poste fixe économique redevenait utile un jour : Beelink SER5 Max
-Ryzen 7 6800H, ~330-360 €, gamme mature et sobre ~35 W — recherche déjà faite.)*
+**« Mini PC » = petit ordi de poche — Chuwi MiniBook X N150 (16 Go / 512 Go)** ⚠️
+Précision utilisateur : c'est un ordi de poche, pas un mini PC de bureau (la reco Beelink est retirée).
+Le meilleur rapport qualité/prix de la catégorie, et de très loin : convertible tactile 10,5"
+1920×1200, Intel N150, 16 Go DDR5, 512 Go SSD, clavier rétroéclairé, 920 g, ventilateur discret,
+**~260-330 €** ([boutique Chuwi EU à 316 €](https://www.minimachines.net/actu/chuwi-minibook-x-2025-intel-n150-132162),
+vu à 258 $ en promo [Slickdeals](https://slickdeals.net/f/19319565-chuwi-minibook-x-2-in-1-10-51-inch-touch-fhd-1200p-intel-n150-16gb-ddr5-512gb-ssd-laptop-258-free-shipping),
+dispo aussi [Conforama](https://www.conforama.fr/tv-son-multimedia/informatique/ordinateur-portable/chuwi-minibook-x-ordinateur-portable-intel-alder-lake-n150|12-go512-go|fhd-10-51-pouces|plus-de-performances|design-ultra-leger-chuwi/p/X97364327)).
+Preuve décisive : le **retour après UN AN d'usage quotidien** de [Tao of Mac](https://taoofmac.com/space/reviews/2026/07/25/1700) —
+« un outil quotidien fiable, pratiquement aucun reproche », aucune dégradation de batterie
+constatée ; tests convergents ([Parka Blogs](https://www.parkablogs.com/content/review-chuwi-minibook-x-n150-laptop),
+[NotebookCheck](https://www.notebookcheck.com/Chuwi-MiniBook-X-N150.1076917.0.html)).
+Défauts assumés : écran 50 Hz (sans effet en bureautique), brillant, 4-5 h de batterie (→ power
+bank), audio creux, touchpad moyen.
+**Précaution (⚠️) : QWERTY uniquement** — aucun ordi de poche (Chuwi, GPD, One-Netbook) n'existe
+en AZERTY, confirmé de longue date ([Minimachines](https://www.minimachines.net/actu/un-gpd-pocket-2-azerty-avec-un-clavier-francais-67383)) ;
+AZERTY logiciel + stickers possibles, mais les touches physiques restent QWERTY — à accepter avant achat.
+**Option premium vraie poche** : [GPD Pocket 4](https://www.amazon.fr/GPD-Pocket-8840U-aluminium-Bluetooth/dp/B0DYG7NCK1)
+(8,8" 2.5K 144 Hz, Ryzen 7 8840U, 770 g, USB4/2.5GbE, **module KVM optionnel** — synergie avec ton
+infra 4 PC) — excellent produit ([test NotebookCheck](https://www.notebookcheck.net/GPD-Pocket-4-Ryzen-AI-9-handheld-PC-review-Small-fast-and-oh-so-adorable.952834.0.html))
+mais ~1 000-1 100 € rendu : 3× le prix pour le même usage bureautique. Le GPD MicroPC 2 (7",
+clavier à pouces, ~500-600 $) est réservé aux usages sysadmin à une main.
 
 **Stockage — Samsung T7 Shield 2 To (+ option WD Elements 5 To à demeure)** ✅
 Pour un backup qui voyage : SSD durci obligatoire (IP65, chute 3 m, zéro pièce mobile) — un HDD
@@ -329,10 +340,9 @@ en housses néoprène — protection moindre à pleine charge. 4 PC ≈ 10-12 kg
 
 ## ❓ Pas encore proposés — ce qui manque pour trancher
 
-1. **PC portables (PC1-3 + back-up, + le « Mini PC » qui est en fait un portable)** — le meilleur
-   choix dépend de l'usage (bureautique ? dev ? graphisme ?) et du budget par machine, que je ne
-   connais pas. Pour le « mini » : préciser aussi la taille voulue (ultraportable 13" ou vrai
-   mini 8-11" ?). La piste la plus solide en
+1. **PC portables (PC1-3 + back-up)** — le meilleur choix dépend de l'usage (bureautique ? dev ?
+   graphisme ?) et du budget par machine, que je ne connais pas. *(Le « Mini PC » est réglé : voir
+   Chuwi MiniBook X ci-dessus, sous réserve d'accepter le QWERTY.)* La piste la plus solide en
    attendant : **ThinkPad T14 Gen 3 AMD reconditionné** (~420-550 €/u sur
    [Back Market](https://www.backmarket.fr/fr-fr/p/lenovo-thinkpad-t14-g3-14)) — MIL-STD-810H
    (chaleur/poussière), réparable partout, 4 machines identiques = un seul jeu de pièces/chargeurs.
