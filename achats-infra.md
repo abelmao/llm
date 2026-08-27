@@ -298,6 +298,13 @@ AZERTY logiciel + stickers possibles, mais les touches physiques restent QWERTY 
 infra 4 PC) — excellent produit ([test NotebookCheck](https://www.notebookcheck.net/GPD-Pocket-4-Ryzen-AI-9-handheld-PC-review-Small-fast-and-oh-so-adorable.952834.0.html))
 mais ~1 000-1 100 € rendu : 3× le prix pour le même usage bureautique. Le GPD MicroPC 2 (7",
 clavier à pouces, ~500-600 $) est réservé aux usages sysadmin à une main.
+**GPD Pocket 3 : écarté en 2026.** Version N6000/7505 : plus lente que le N150 du Chuwi pour ~2×
+son prix ; version i7-1195G7 : encore vendue [~930 $ neuve](https://www.sunsky-online.com/p/WMC0729B/GPD-Pocket-3-Mini-Laptop-8.0-inch-16GB-1TB-Windows-11Intel-Core-i7-1195G7-Quad-Core-up-to-5.0Ghz-.htm)
+/ ~755 $ d'occasion, soit quasi le prix d'un Pocket 4 très supérieur (8840U, écran 2.5K 144 Hz vs
+8" 60 Hz, USB4) ; et sa charnière rotative est le point faible documenté par les possesseurs
+([caches de charnière qui se détachent — forum support GPD](https://gpdsupport.com/t/gpd-pocket-3-loose-screen-hinge-covers/675),
+[joint jugé fragile — Liliputing](https://liliputing.com/gpd-pocket-3-mini-laptop-review/)).
+Seul cas défendable : une occasion i7 sous ~450 € pour le format 8" + modules KVM/RS-232.
 
 **Stockage — Samsung T7 Shield 2 To (+ option WD Elements 5 To à demeure)** ✅
 Pour un backup qui voyage : SSD durci obligatoire (IP65, chute 3 m, zéro pièce mobile) — un HDD
