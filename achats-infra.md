@@ -289,6 +289,14 @@ Prix : **V4 Mini ~250-350 €**. Limites : pas d'émulation de webcam (audio seu
 [demande ouverte](https://github.com/pikvm/pikvm/issues/1497)) ; si le PC est administré, vérifier
 que la politique USB de l'entreprise accepte un périphérique composite clavier/micro (et l'accord
 de l'IT). Le PiKVM peut se connecter à Internet via ton routeur 4G plutôt que le réseau du PC.
+⚠️ **Latence micro : peu de retours publiés** (fonction récente). Le sens « entendre » est très
+optimisé ([doc latence](https://docs.pikvm.org/latency/)), mais aucun chiffre publié pour le micro
+émulé en call réel, un [bug de coupure audio sur flux intermittents](https://github.com/pikvm/pikvm/issues/1621)
+est ouvert, et l'équivalent GL.iNet a montré que ce chemin peut être raté
+([2-3 s de latence micro en bêta](https://forum.gl-inet.com/t/high-mic-latency-beta-test-version/61400)).
+→ Acheter avec retour 30 j (Amazon), faire un call test dès réception, casque obligatoire (pas
+d'annulation d'écho) ; plan B au coût quasi nul : pont analogique Sonobus (latence ~30-80 ms
+documentée) vers la prise micro du PC.
 **Option budget à surveiller (pas encore proposée)** : JetKVM ~90 € — audio bidirectionnel ajouté
 fin 2025 ([PR #718](https://github.com/jetkvm/kvm/pull/718), gadget UAC1 haut-parleurs + micro,
 testé en call Teams) mais qualité jugée « correcte, pas HD, souffle constant » et encore
