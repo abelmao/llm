@@ -275,6 +275,28 @@ USB (~80-120 €) en Sonobus/VBAN headless — c'est exactement ce qu'étaient l
 Pour la simple visio, rejoindre l'audio de la réunion depuis l'app téléphone reste la solution la
 plus robuste (zéro matériel, résiliente aux coupures).
 
+**Micro virtualisé SANS RIEN INSTALLER sur le PC — PiKVM V4 Mini** ✅
+Contrainte : faire des calls sur un ordinateur verrouillé (zéro logiciel installable), micro
+accessible à distance, solution matériel + Internet. La réponse existe, officielle et vérifiée :
+le **PiKVM V4** (et V3) émule côté PC un **micro USB standard** (mêmes identifiants USB que le
+clavier émulé — aucun pilote, Windows le voit comme un micro ordinaire) et capte le son du PC par
+HDMI ; depuis n'importe quel navigateur à distance, tu entends le PC et **ta voix est injectée
+dans le micro émulé** — fonctionnalité « two-way audio with microphone » livrée en
+[KVMD 4.44, janv. 2025](https://docs.pikvm.org/blog/2025/01/20/kvmd-4-44-two-way-audio-with-microphone/),
+activée par défaut sur V4 ([doc audio](https://pikvm.github.io/pikvm/audio/)). Accès distant
+intégré (Tailscale/PiKVM Cloud), et bonus : contrôle clavier/souris/écran complet du PC.
+Prix : **V4 Mini ~250-350 €**. Limites : pas d'émulation de webcam (audio seulement —
+[demande ouverte](https://github.com/pikvm/pikvm/issues/1497)) ; si le PC est administré, vérifier
+que la politique USB de l'entreprise accepte un périphérique composite clavier/micro (et l'accord
+de l'IT). Le PiKVM peut se connecter à Internet via ton routeur 4G plutôt que le réseau du PC.
+**Option budget à surveiller (pas encore proposée)** : JetKVM ~90 € — audio bidirectionnel ajouté
+fin 2025 ([PR #718](https://github.com/jetkvm/kvm/pull/718), gadget UAC1 haut-parleurs + micro,
+testé en call Teams) mais qualité jugée « correcte, pas HD, souffle constant » et encore
+expérimentale → attendre une révision stable.
+**Option micro-seul à ~0-120 €** : un vieux smartphone ou Raspberry Pi collé au PC, relié à la
+prise micro (jack) ou à un dongle USB audio class-compliant (~12 €, sans pilote), faisant tourner
+Sonobus — ta voix arrive par Internet dans l'entrée micro du PC, zéro logiciel sur le PC.
+
 ### Équipements
 
 **Écrans portables — Arzopa Z1RC 16" 2.5K ×2** ✅
